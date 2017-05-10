@@ -1,0 +1,20 @@
+//fetching function signature ************
+  const FUNCTION_REGEXP = /^function ([_$a-zA-Z\xA0-\uFFFF][_$a-zA-Z0-9\xA0-\uFFFF]*)?(\([^\)]*\))[\s\S]+$/;
+  function vx(dirx, fgh){
+
+  }
+  var ll = vx.toString().replace(FUNCTION_REGEXP,(match, name = 'vx', params) => params);
+  console.log(ll);// will return => '(dirx, fgh)'
+
+  function removeCommentsFromFunctionString(s) {
+    s = s.replace(/\s*(\/\/.*)/g, '');
+    s = s.replace(/(\/\*[\n\r\s\S]*?\*\/)/mg, '');
+
+    return s;
+  }
+
+//************************************************
+function camelize(str) {
+  return str.trim().replace(/[-_\s]+(.)?/g, (match, c) => c.toUpperCase());
+}
+//*************************************************

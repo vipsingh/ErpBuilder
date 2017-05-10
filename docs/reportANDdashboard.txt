@@ -1,0 +1,6 @@
+#Table => from ObjectList, from ReportQuery, from QueryBuilder
+#Chart
+#Graph
+#Pivot
+#Tree
+#KPI

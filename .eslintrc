@@ -1,0 +1,16 @@
+{
+    "rules": {
+        "semi": [
+            2,
+            "always"
+        ]
+    },
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "globals": {
+        "console": true
+    },
+    "extends": "eslint:recommended"
+}

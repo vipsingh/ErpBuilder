@@ -1,0 +1,11 @@
+﻿$$ Object Client Model $$
+#create model from object model
+#Commands :: general commands to add on object screen
+	attach server_function OR client_function on command
+	Command(type:'', text:'', icon:'', color:'', visible_on_status:[], visible_condition:'')
+	Default commands(Print, Save(edit_mode:true, allow_edit: true), Edit(view_mode: true, allow_edit: true))
+#IF DOCUMENT
+	Auth Commands ex: Submit, Approve, Reject
+#Status ui. show status movement and current status with color.
+
+#Condition evalute for any field visibility. ex: visible SO field on SI when SI is generated from SO. {visible_on: 'eval:order_no != null'}

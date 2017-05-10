@@ -1,0 +1,6 @@
+﻿$$ Object Client Controller
+
+#functionality to handle on client side.
+#by default a generic controller will be available.
+#we can add custom JS function or script on client.
+	we can control the operation on client.

@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>AppBuilder</Name>
+    <RootNamespace>AppBuilder</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>7664f2fe-1651-40df-91aa-1f36fcdc781b</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>bin\www</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <NodejsPort>4400</NodejsPort>
+    <StartWebBrowser>true</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include=".scripts\buildData.js" />
+    <Compile Include=".scripts\dbBuild.js" />
+    <Compile Include="api\auth.js" />
+    <Compile Include="api\board.js" />
+    <Compile Include="api\image.js" />
+    <Compile Include="api\index.js" />
+    <Compile Include="api\object.js" />
+    <Compile Include="api\report.js" />
+    <Compile Include="api\system.js" />
+    <Compile Include="app.js" />
+    <Compile Include="config.json" />
+    <Compile Include="fm\account\userAuth.js" />
+    <Compile Include="fm\account\userPermission.js" />
+    <Compile Include="fm\app\log.js" />
+    <Compile Include="fm\app\notify.js" />
+    <Compile Include="fm\app\structure.js" />
+    <Compile Include="fm\baseApp\objects\Company.js" />
+    <Compile Include="fm\baseApp\objects\Country.js" />
+    <Compile Include="fm\baseApp\objects\Currency.js" />
+    <Compile Include="fm\baseApp\objects\SysModule.js" />
+    <Compile Include="fm\baseApp\objects\SysObject.js" />
+    <Compile Include="fm\baseApp\objects\User.js" />
+    <Compile Include="fm\currentContext.js" />
+    <Compile Include="fm\errors.js" />
+    <Compile Include="fm\app\message.js" />
+    <Compile Include="fm\i18n.js" />
+    <Compile Include="fm\init.js" />
+    <Compile Include="fm\repos\baseRepo.js" />
+    <Compile Include="fm\repos\documentRepo.js" />
+    <Compile Include="fm\repos\entityRepo.js" />
+    <Compile Include="fm\repos\index.js" />
+    <Compile Include="fm\repos\modelRepo.js" />
+    <Compile Include="fm\repos\moduleSettingRepo.js" />
+    <Compile Include="fm\repos\sysBoardRepo.js" />
+    <Compile Include="fm\repos\sysCodeRepo.js" />
+    <Compile Include="fm\repos\sysReportRepo.js" />
+    <Compile Include="fm\repos\treeEntityRepo.js" />
+    <Compile Include="fm\schema\actionButton.js" />
+    <Compile Include="fm\schema\command.js" />
+    <Compile Include="fm\schema\modelField.js" />
+    <Compile Include="fm\setup\dbSetup.js" />
+    <Compile Include="fm\setup\modelLoader.js" />
+    <Compile Include="fm\stackApp.js" />
+    <Compile Include="fm\testt.js" />
+    <Compile Include="fm\ui\tableUi.js" />
+    <Compile Include="fm\utils\dataFilter.js" />
+    <Compile Include="fm\utils\fileManager.js" />
+    <Compile Include="fm\utils\index.js" />
+    <Compile Include="fm\utils\validator.js" />
+    <Compile Include="_apps1\common\objects\DocItemLinkTemplate.js" />
+    <Compile Include="_apps1\core\objects\CompanyUnit.js" />
+    <Compile Include="_apps1\core\objects\Currency.js" />
+    <Compile Include="_apps1\core\objects\DocumentTaxTrans.js" />
+    <Compile Include="_apps1\core\objects\Partner.js" />
+    <Compile Include="_apps1\core\objects\PriceList.js" />
+    <Compile Include="_apps1\core\objects\TermCondition.js" />
+    <Compile Include="_apps1\core\objects\User.js" />
+    <Compile Include="_apps1\finance\objects\Account.js" />
+    <Compile Include="_apps1\finance\objects\Journal.js" />
+    <Compile Include="_apps1\finance\objects\Tax.js" />
+    <Compile Include="_apps1\finance\objects\TaxTemplate.js" />
+    <Compile Include="_apps1\inventory\objects\Product.js" />
+    <Compile Include="_apps1\inventory\objects\StockIssue.js" />
+    <Compile Include="_apps1\inventory\objects\StockReceipt.js" />
+    <Compile Include="_apps1\inventory\objects\Warehouse.js" />
+    <Compile Include="_apps1\sales\objects\Customer.js" />
+    <Compile Include="_apps1\sales\objects\DiscountTemplate.js" />
+    <Compile Include="_apps1\sales\objects\Partner.js" />
+    <Compile Include="_apps1\sales\objects\SalesInvoice.js" />
+    <Compile Include="_apps1\sales\objects\SalesOrder.js" />
+    <Compile Include="_apps1\sales\objects\Territory.js" />
+    <Compile Include="_apps1\sales\reports\SalesAnalysis.js" />
+    <Compile Include="_apps\core\objects\Currency.js" />
+    <Compile Include="_apps\core\objects\Product.js" />
+    <Compile Include="_apps\core\objects\User.js" />
+    <Compile Include="_apps\sales\objects\Customer.js" />
+    <Compile Include="_apps\sales\objects\Partner.js" />
+    <Compile Include="_apps\sales\objects\SalesOrder.js" />
+    <Compile Include="_apps\sales\reports\SalesAnalysis.js" />
+    <Content Include=".eslintrc" />
+    <Content Include="content\default\images\no_image_base.png" />
+    <Content Include="content\default\images\person_default_base.png" />
+    <Content Include="docs\jsutility.txt" />
+    <Content Include="docs\nodejs_projects.txt" />
+    <Content Include="docs\reportANDdashboard.txt" />
+    <Content Include="docs\sql.txt" />
+    <Content Include="fm\baseApp\readme.txt" />
+    <Content Include="fm\dms\readme.txt" />
+    <Content Include="fm\translations\en.json" />
+    <Compile Include="fm\utils\readDirectory.js" />
+    <Compile Include="routes\index.js" />
+    <Compile Include="bin\www" />
+    <Content Include="docs\link.txt" />
+    <Content Include="docs\UI.txt" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include="views\HTML1.html" />
+    <Content Include="docs\client common helper function.txt" />
+    <Content Include="docs\object client controller.txt" />
+    <Content Include="docs\object client model doc.txt" />
+    <Content Include="docs\object server controller doc.txt" />
+    <Content Include="_apps1\modules.json" />
+    <Content Include="_apps\modules.json" />
+    <Content Include="_apps\sales\objects\Partner.jsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".scripts\" />
+    <Folder Include="bin\" />
+    <Folder Include="content\" />
+    <Folder Include="content\db\" />
+    <Folder Include="content\db\db_00000001\" />
+    <Folder Include="content\db\db_00000001\images\" />
+    <Folder Include="content\default\" />
+    <Folder Include="content\default\images\" />
+    <Folder Include="fm\" />
+    <Folder Include="fm\baseApp\" />
+    <Folder Include="fm\baseApp\objects\" />
+    <Folder Include="fm\db\" />
+    <Folder Include="fm\app\" />
+    <Folder Include="fm\account\" />
+    <Folder Include="fm\dms\" />
+    <Folder Include="fm\setup\" />
+    <Folder Include="fm\schema\" />
+    <Folder Include="fm\repos\" />
+    <Folder Include="fm\utils\" />
+    <Folder Include="fm\translations\" />
+    <Folder Include="fm\tools\" />
+    <Folder Include="fm\ui\" />
+    <Folder Include="docs\" />
+    <Folder Include="api\" />
+    <Folder Include="client\" />
+    <Folder Include="typings\" />
+    <Folder Include="typings\globals\" />
+    <Folder Include="typings\globals\node\" />
+    <Folder Include="_apps1\" />
+    <Folder Include="_apps1\common\" />
+    <Folder Include="_apps1\common\objects\" />
+    <Folder Include="_apps1\core\" />
+    <Folder Include="_apps1\core\objects\" />
+    <Folder Include="_apps1\finance\" />
+    <Folder Include="_apps1\finance\objects\" />
+    <Folder Include="_apps1\inventory\" />
+    <Folder Include="_apps1\inventory\objects\" />
+    <Folder Include="_apps1\purchase\" />
+    <Folder Include="_apps1\purchase\objects\" />
+    <Folder Include="_apps1\sales\" />
+    <Folder Include="_apps1\sales\objects\" />
+    <Folder Include="_apps1\sales\reports\" />
+    <Folder Include="_apps\" />
+    <Folder Include="routes\" />
+    <Folder Include="views\" />
+    <Folder Include="_apps\core\" />
+    <Folder Include="_apps\core\objects\" />
+    <Folder Include="_apps\sales\" />
+    <Folder Include="_apps\sales\objects\" />
+    <Folder Include="_apps\sales\reports\" />
+    <Folder Include="_apps\sales\setting\" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="typings\globals\node\index.d.ts" />
+    <TypeScriptCompile Include="typings\index.d.ts" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

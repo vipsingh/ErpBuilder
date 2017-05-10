@@ -1,0 +1,9 @@
+﻿insert into item values('item1', 'item1', 0, 1,'2016-01-01',null,null)
+SELECT SCOPE_IDENTITY() AS [SCOPE_IDENTITY];  
+
+
+insert into customer values('cust1', 'noida', 2000, null, 1,'2016-01-01',null,null)
+insert into customer_contacts values(1, 'cnct1','813912', 1,'2016-01-01',null,null)
+insert into customer_contacts values(1, 'cnct2','432435', 1,'2016-01-01',null,null)
+
+insert into [address] values(1, 'adasd','ad',1,'2016-01-01',null,null, 1)

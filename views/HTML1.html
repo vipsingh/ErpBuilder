@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+</head>
+<body>
+  <textarea id='txtarea' />
+
+  <button id='btnnew'>GetNew</button>
+  <button id='btnsave'>Save</button>
+  <button id='btnlist'>GetList</button>
+
+  <script>
+    $(function() {
+      $('#btnnew').click(function() {
+        $site.get('object/customer', {}).then(function (dt) {
+            $('#txtarea').value(JSON.stringify(dt));
+        });
+      });
+
+      $('#btnsave').click(function() {
+
+      });
+
+      $('#btnlist').click(function() {
+
+      });
+    });
+  </script>
+
+
+    <table>
+        <tr><td></td></tr>
+    </table>
+    <script>
+        var localVm = function () {
+            var that = this;
+            that.c_scripts = {};
+
+            that.onInit = function (vm) {
+            };
+
+            that.onGetModel = function (server_data) {
+            };
+
+            that.beforeInit = function (vm) {
+            };
+
+            that.beforeSave = function (vm) {
+            };
+
+            that.onSave = function (vm, return_data) {
+            };
+
+            that.onValidate = function (vm) {
+            };
+
+            that.beforeCommandExec = function (command, vm) {
+            };
+
+            that.onCommandExec = function (command, vm, cmd_result) {
+            };
+
+            /*for document*/
+            that.onSubmit = function (vm) {
+            };
+
+            that.onAuthorize = function (vm) {
+            };
+            /**/
+        }
+    </script>
+</body>
+</html>

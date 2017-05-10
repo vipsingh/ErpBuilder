@@ -1,0 +1,5 @@
+﻿https://github.com/TryGhost/Ghost/tree/master/core
+bookshelf
+
+https://github.com/NodeBB/NodeBB/tree/master/src
+async pattern

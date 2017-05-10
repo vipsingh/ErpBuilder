@@ -1,0 +1,9 @@
+﻿{
+    "profiles": [
+        {
+            "id": "1",
+            "string": "postgres://postgres:sasa@localhost:5432/stackdb",
+            "dbType": "pg"
+        }
+    ]
+}

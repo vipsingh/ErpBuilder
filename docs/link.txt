@@ -1,0 +1,25 @@
+﻿
+$$ Session
+	https://github.com/expressjs/session
+
+$$ lru-cache -- NPM
+	A cache object that deletes the least-recently-used items.
+
+$$ nconf -- NPM
+	dealing with configurations
+
+$$ winston --NPM
+	A multi-transport async logging library for Node.js
+
+$$ passport -- NPM
+	Simple, unobtrusive authentication for Node.js.
+
+$$ Html to Pdf
+	https://github.com/marcbachmann/node-html-pdf
+var pdf = require('html-pdf');
+var html = fs.readFileSync('./card.html', 'utf8');
+var options = { format: 'Letter' };
+pdf.create(html, options).toFile('./businesscard.pdf', function(err, res) {
+	if (err) return console.log(err);
+	console.log(res);
+});

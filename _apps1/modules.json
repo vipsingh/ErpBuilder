@@ -1,0 +1,7 @@
+﻿{
+  "core":{"text":"Core"},
+  "sales":{"text":"Sales"},
+  "purchase":{"text":"Purchase"},
+  "inventory":{"text":"Inventory"},
+  "finance":{"text":"Finance"}
+}

@@ -1,0 +1,40 @@
+{
+  "name": "app-builder",
+  "version": "0.1.0",
+  "node-version": "6.9.0",
+  "scripts": {
+    "start": "node ./bin/www",
+    "debug": "node-debug ./bin/www",
+    "inspect": "node --inspect --debug-brk ./bin/www",
+    "build": "node .scripts\\dbBuild.js"
+  },
+  "description": "ERP AppBuilder",
+  "author": {
+    "name": "Vipin",
+    "email": "vip.singh.net@gmail.com"
+  },
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "bluebird": "",
+    "body-parser": "~1.8.1",
+    "bookshelf": "^0.10.0",
+    "chalk": "^1.1.3",
+    "continuation-local-storage": "^3.1.7",
+    "cookie-parser": "~1.3.3",
+    "debug": "~2.0.0",
+    "express": "~4.9.0",
+    "express-session": "^1.14.0",
+    "intl": "^1.2.4",
+    "intl-messageformat": "^1.3.0",
+    "jade": "~1.6.0",
+    "knex": "^0.11.7",
+    "lodash": "^4.13.1",
+    "moment": "^2.13.0",
+    "morgan": "~1.3.0",
+    "pg": "^6.0.0",
+    "pretty-error": "2.0.2",
+    "serve-favicon": "~2.1.3",
+    "stylus": "0.42.3",
+    "validator": "^5.5.0"
+  }
+}

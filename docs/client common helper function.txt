@@ -1,0 +1,15 @@
+﻿$$ Common helper function on client
+
+#these functions can be used on custom scripts and functions
+
+#set_value(:object_model, :field_name, :value) :: set value to the field of current object
+#get_value(:object_model, :field_name)
+
+#fetch_object(:object_name, :id, :fields)
+#fetch_objects(:object_name, :fields, :where)
+
+#call_func_serevr(:object_name+function_name, :params) :: call server function object controller OR module controller
+	"object.customer.func_1" OR "module.sales.func_1"
+#call_func_client(:object_name+function_name, :params) :: call client function object controller
+
+#events :: field_change

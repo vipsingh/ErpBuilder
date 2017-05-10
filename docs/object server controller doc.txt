@@ -1,0 +1,12 @@
+﻿$$ Object Server Controller
+
+#it will handle server side operation.
+	by default a generic controller will be available.
+	we can add custom operation and functionality in controller.
+		ex: custom function which will be called from client, 
+		custom data to send to the client.
+	we can override default functionality OR we can add custom script after or before any operation.
+
+#it will handle list data and list data configuration
+
+
