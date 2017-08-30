@@ -52,7 +52,7 @@ class ModelRepo{
       let ext_model_obj = new that.StackApp.ObjectRepo[this._extend_with_.name]();
       flds = Object.assign(flds, ext_model_obj.fields);
     }
-    flds = Object.assign(flds, this.fields)
+    flds = Object.assign(flds, this.fields);
     _.each(_.keys(flds), function(prop) {
       d[prop] = flds[prop]();
       d[prop].name = prop;
@@ -124,6 +124,13 @@ class ModelRepo{
         }
       });
       return r;
+    });
+  }
+
+  write(id, values){
+    var that = this;
+    return new Promise((resolve, reject)=>{
+      
     });
   }
 }

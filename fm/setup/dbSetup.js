@@ -144,8 +144,8 @@ function Loader() {
     else if (field.field_type == 'text'){
       fd = table.text(field_key);
     }
-    if(!field.nullable && !isExtendedTable)
-      fd.notNullable();
+    //if(!field.nullable && !isExtendedTable)
+      //fd.notNullable();
   }
 
   function buildModelField(model_inst) {
